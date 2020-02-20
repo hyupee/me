@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Helvetica;
+  src: url('./Helvetica-Black.woff');
+};
+
+@font-face {
+  font-family: Helvetica Light;
+  src: url('./Helvetica-Condensed-Light-Oblique.woff');
+};
+
