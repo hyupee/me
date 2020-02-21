@@ -1,6 +1,18 @@
-#home-background {
+.section-content {
   width: 100%;
   height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#home-wrap {
+  position: relative;
+}
+
+#home-background {
+  z-index: 9;
   background-color: #666;
   display: flex;
   justify-content: center;
@@ -71,5 +83,133 @@
       border-right:300px solid transparent;
       border-top: 180px solid #fff; 
     }  
+  }
+}
+
+#about {
+  background-color: #fff;
+  padding: 15rem 12rem 5rem;
+
+  .info-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 13rem;
+
+    .title-wrap {
+      padding-bottom: 3rem;
+
+      .kr-info-title {
+        font-family: Gm Medium;
+        font-size: 1.5rem;
+        padding-bottom: 1.25rem;
+      }
+    
+      .en-info-title {
+        font-family: Gm Bold;
+        font-size: 3rem;
+      }
+    }
+
+    .contact-wrap {
+      .contact-list ul li {
+        font-family: Gm Medium;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+
+        a, span {
+          color: #333;
+          transition: color .2s;
+          font-family: Gm Medium;
+          font-size: 1rem;
+        }
+
+        a {
+          &:hover {
+            color: #ddd;
+
+            span {
+              color: #ddd;
+            }
+          }
+        }
+        
+        span {  
+          vertical-align: middle;
+
+          img {
+            width: 22px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .career-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+
+    .career-area {
+      padding-bottom: 5rem;
+      padding-right: 2rem;
+
+      h3 {
+        font-family: Gm Medium;
+        padding-bottom: 1rem;
+      }
+
+      ul li, span {
+        font-family: Gm Light;
+      }
+
+      ul li {
+        padding-bottom: 0.5rem;
+
+        &.italic {
+          padding-top: 10px;
+          font-style: italic;
+        }
+
+        span.year {
+          padding-right: 1rem;
+          padding-bottom: 0.5rem;
+
+          &.block {
+            display: block;
+          }
+        }
+
+        span.react {
+          color: #61dafb;
+        }
+
+        span.redux {
+          color: #9b59b6;
+        }
+
+        span.saga {
+          color: #2ecc71;
+        }
+
+        span.html {
+          color: #e74c3c;
+        }
+
+        span.css {
+          color: #3498db;
+        }
+
+        span.scss {
+          color: #bf4080;
+        }
+
+        span.js {
+          color: #f1c40f;
+        }
+      }
+    }
   }
 }

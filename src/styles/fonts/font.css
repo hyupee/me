@@ -8,3 +8,19 @@
   src: url('./Helvetica-Condensed-Light-Oblique.woff');
 };
 
+@font-face {
+  font-family: Gm Light;
+  src: url('./GmarketSansTTFLight.woff');
+};
+
+@font-face {
+  font-family: Gm Medium;
+  src: url('./GmarketSansTTFMedium.woff');
+};
+
+@font-face {
+  font-family: Gm Bold;
+  src: url('./GmarketSansTTFBold.woff');
+};
+
+
