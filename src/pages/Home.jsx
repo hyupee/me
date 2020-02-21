@@ -4,10 +4,10 @@ import { useSpring, animated } from 'react-spring';
 import GithubIcon from '../asset/images/github.png';
 
 const Home = () => {
-  const HomeStyle = useSpring({ from: { opacity: 1, zIndex: 9 }, to: { opacity: 0, zIndex: -9 }, delay: 2500 });
-  const contentWrapStyle = useSpring({ top: -100, from: { top: -1000 } });
-  const coverStyle = useSpring({ width: 100, from: { width: 0 }, delay: 1000 });
-  const coverTextStyle = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 1500 });
+  const HomeStyle = useSpring({ from: { opacity: 1, zIndex: 9 }, to: { opacity: 0, zIndex: -9 }, delay: 2800 });
+  const contentWrapStyle = useSpring({ top: -100, from: { top: -1000 }, delay: 300 });
+  const coverStyle = useSpring({ width: 100, from: { width: 0 }, delay: 1300 });
+  const coverTextStyle = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 1800 });
   
   return (
     <div id="home-wrap">
